@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"
+    rel="stylesheet"
+  />
+  <link href="styles.css" rel="stylesheet" />
+  <title>Coffee Masters</title>
+</head>
+<body>
+  <header class="header">
+    <img class="header__logo" src="logo.png" alt="Coffee Masters Logo" />
+    <h1 class="header__title">Coffee Masters</h1>
+  </header>
+  <section class="cart">
+    <div class="cart__items">
+      <h2 class="cart__items__title">Items</h2>
+      <ul class="cart__items__list">
+        <li class="cart__items__list__item">
+          <p class="cart__items__list__item__amount">1x</p>
+          <div class="cart__items__list__item__description">
+            <p class="cart__items__list__item__description__name">Cappuccino</p>
+            <p class="cart__items__list__item__description__detail">Light Foam</p>
+          </div>
+          <p class="cart__items__list__item__price">$6.00</p>
+        </li>
+        <li class="cart__items__list__item">
+          <p class="cart__items__list__item__amount">1x</p>
+          <div class="cart__items__list__item__description">
+            <p class="cart__items__list__item__description__name">Cappuccino</p>
+            <p class="cart__items__list__item__description__detail">Almond Milk</p>
+            <p class="cart__items__list__item__description__detail">Double Espresso Shot</p>
+          </div>
+          <p class="cart__items__list__item__price">$7.90</p>
+        </li>
+        <li class="cart__items__list__item">
+          <p class="cart__items__list__item__amount">1x</p>
+          <div class="cart__items__list__item__description">
+            <p class="cart__items__list__item__description__name">Croissant</p>
+            <p class="cart__items__list__item__description__detail">Butter</p>
+          </div>
+          <p class="cart__items__list__item__price">$5.37</p>
+        </li>
+      </ul>
+    </div>
+    <div class="cart__form">
+      <div class="cart__form__name">
+        <h2 class="cart__form__name__title">Name</h2>
+        <div class="cart__form__name__input">
+          <label class="cart__form__name__input__label">Name for order</label>
+          <input class="cart__form__name__input__field" />
+        </div>
+      </div>
+      <div class="cart__form__payment">
+        <h2 class="cart__form__payment__title">Payment</h2>
+        <div class="cart__form__payment__input">
+          <label class="cart__form__payment__input__label">Card number</label>
+          <input class="cart__form__payment__input__field" />
+        </div>
+        <div class="cart__form__payment__input">
+          <label class="cart__form__payment__input__label">CCV Number</label>
+          <input class="cart__form__payment__input__field cart__form__payment__input__field--short" />
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="order">
+    <div class="order__receipt">
+      <div class="order__receipt__entry">
+        <p class="order__receipt__entry__key">Subtotal:</p>
+        <p class="order__receipt__entry__value">$19.27</p>
+      </div>
+      <div class="order__receipt__entry">
+        <p class="order__receipt__entry__key">Tax:</p>
+        <p class="order__receipt__entry__value">$0.96</p>
+      </div>
+      <div class="order__receipt__entry order__receipt__entry--bold">
+        <p class="order__receipt__entry__key">Total:</p>
+        <p class="order__receipt__entry__value">$20.23</p>
+      </div>
+    </div>
+    <button class="order__confirm">Place order</button>
+  </section>
+</body>
+</html>
